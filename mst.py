@@ -40,8 +40,6 @@ for i_row in range (start_row, end_row):
     cell_name_address = "%s%s"%(col_name_address, i_row)
 
     mst = get_value_excel(filename, cell_name_mst)
-    # driver = webdriver.Chrome(ChromeDriverManager().install())
-    # driver.get("https://masothue.com/")
 
     # Fill in value to Search
     mstSearch = driver.find_element("id", "search")
